@@ -2,6 +2,9 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
+//nodeemon set-up
+//https://www.npmjs.com/package/nodemon
+
 
 var port = process.env.PORT || 3000;
 

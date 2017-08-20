@@ -7,17 +7,17 @@ o	devoured: a boolean.
 o	date: a TIMESTAMP.
 */
 
-DROP DATABASE IF EXSITS burgers_db;
+DROP DATABASE IF EXISTS burgers_db;
 
 CREATE DATABASE burgers_db;
 
 
 CREATE TABLE burgers(
 
- id: INT (50) AUTO_INCREMENT NOT NULL, 
- burger_name: VARCHAR (50) NOT NULL, 
- devoured: boolean NOT NULL, 
- date: CURRENT TIMESTAMP NOT NULL, 
+ id INT (50) AUTO_INCREMENT NOT NULL, 
+ burger_name VARCHAR (50) NOT NULL, 
+ devoured boolean DEFAULT false NOT NULL, 
+ date CURRENT TIMESTAMP NOT NULL, 
  PRIMARY KEY (id)
 );
 
