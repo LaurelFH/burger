@@ -34,10 +34,10 @@ router.put("/:id", function(req, res) {
 
   burger.update({
     devoured: req.body.devoured
-});
-  }, condition, function() {
+},condition, function() {
     res.redirect("/");
   });
+});
 
 // router.delete("/:id", function(req, res) {
 //   var condition = "id = " + req.params.id;
