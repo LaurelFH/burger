@@ -17,9 +17,12 @@ CREATE TABLE burgers(
  id INT (50) AUTO_INCREMENT NOT NULL, 
  burger_name VARCHAR (50) NOT NULL, 
  devoured boolean DEFAULT false NOT NULL, 
- date CURRENT_TIMESTAMP NOT NULL, 
+ date timestamp NOT NULL, 
  PRIMARY KEY (id)
 );
 
 
 SELECT * FROM burgers_db;
+
+INSERT INTO brugers (burger_name, devoured)
+VALUES ("Choshi Burger", true), ("Bull City Burger", false), ("Wasabi Burger", false); 
