@@ -32,7 +32,6 @@ function objToSql(ob) {
 var orm = {
 
 selectAll: function(tableInput, cb){
-
  var queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, function(err, result) {
       if (err) {
@@ -84,7 +83,7 @@ updateOne: function(table, objColVals, condition, cb){
     });
 	}
 // 	,
-// 	  delete: function(table, condition, cb) {
+// 	  deleteOne: function(table, condition, cb) {
 //     var queryString = "DELETE FROM " + table;
 //     queryString += " WHERE ";
 //     queryString += condition;
@@ -102,7 +101,7 @@ updateOne: function(table, objColVals, condition, cb){
 
 
 
-
+//exporting the burger for the model and controller info 
 module.exports = orm;
 
 
