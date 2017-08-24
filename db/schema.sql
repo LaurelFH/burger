@@ -23,7 +23,7 @@ CREATE TABLE burgers(
 );
 
 
-SELECT * FROM burgers_db;
+SELECT * FROM burgers;
 
-INSERT INTO brugers (burger_name, devoured)
+INSERT INTO burgers (burger_name, devoured)
 VALUES ("Choshi Burger", true), ("Bull City Burger", false), ("Wasabi Burger", false); 
