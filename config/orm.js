@@ -44,10 +44,10 @@ selectAll: function(tableInput, cb){
 //usual insert function from mySQL (like with seeds)
 //need all values for the table, col, val and the callback
 insertOne: function (table, col, vals, cb){
-	var queryString = "INSERT INTO" + table;
+	var queryString = "INSERT INTO " + table;
 
     queryString += " (";
-    queryString += cols.toString();
+    queryString += col.toString();
     queryString += ") ";
     queryString += "VALUES (";
     queryString += printQuestionMarks(vals.length);
@@ -82,21 +82,6 @@ updateOne: function(table, objColVals, condition, cb){
       cb(result);
     });
 	}
-// 	,
-// 	  deleteOne: function(table, condition, cb) {
-//     var queryString = "DELETE FROM " + table;
-//     queryString += " WHERE ";
-//     queryString += condition;
-
-//     connection.query(queryString, function(err, result) {
-//       if (err) {
-//         throw err;
-//       }
-
-//       cb(result);
-//     });
-//   }
-// };
 };
 
 
