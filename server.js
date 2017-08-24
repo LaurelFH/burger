@@ -2,6 +2,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
+var exphbs = require('express-handlebars');
 //nodeemon set-up
 //https://www.npmjs.com/package/nodemon
 //set up path?
@@ -10,7 +11,8 @@ var port = process.env.PORT || 3000;
 
 var app = express();
 
-// Serve static content for the app from the "public" directory in the application directory.
+
+// Serve static content for the app from the "views/assets" directory in the application directory.
 app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -19,13 +21,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
 
 // Set Handlebars.
-var exphbs = require("express-handlebars");
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-//for my static files 
 
-// app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Import routes and give the server access to them.
