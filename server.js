@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 //nodeemon set-up
 //https://www.npmjs.com/package/nodemon
-
+//set up path?
 
 var port = process.env.PORT || 3000;
 
@@ -23,6 +23,11 @@ var exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
+
+//for my static files 
+
+// app.use(express.static(path.join(__dirname, 'public')));
+
 
 // Import routes and give the server access to them.
 var routes = require("./controllers/burgers_controller.js");

@@ -64,9 +64,9 @@ insertOne: function (table, col, vals, cb){
 
 },
 
-
+// An example of objColVals would be {burger_name: Oak City, devoured: true}
 updateOne: function(table, objColVals, condition, cb){
-	var queryString = "UPDATE" + table;
+	var queryString = "UPDATE " + table;
 
     queryString += " SET ";
     queryString += objToSql(objColVals);
@@ -103,8 +103,6 @@ updateOne: function(table, objColVals, condition, cb){
 
 //exporting the burger for the model and controller info 
 module.exports = orm;
-
-
 
 
 //more on objToSQL:  

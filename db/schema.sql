@@ -18,7 +18,7 @@ CREATE TABLE burgers(
  id INT (50) AUTO_INCREMENT NOT NULL, 
  burger_name VARCHAR (50) NOT NULL, 
  devoured boolean DEFAULT false NOT NULL, 
- date timestamp NOT NULL, 
+ date timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, 
  PRIMARY KEY (id)
 );
 
