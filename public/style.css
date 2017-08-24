@@ -1,15 +1,24 @@
 body{
 
 	background-color: yellow;
+	font-family: 'Pacifico', cursive;
+	  background-image: url('wallpaper.png');
+}
+
+html {
+/*  background-image: url('wallpaper.png');*/
 }
 
 h1{
 
 	color: purple;
+	font-family: 'Pacifico', cursive;
+
 }
 
 p{
 
+	font-family: 'Pacifico', cursive;
 
 }
 
@@ -20,7 +29,33 @@ li{
 }
 #createUpdate{
 	border: red 5px solid;
+	 text-align: center;
 
 
 }
 
+#burgersEaten{
+
+	border: yellow 5px solid;
+	 text-align: center;
+	 background-color: red;
+	/*opacity: .5;*/
+}
+
+
+#burgersToEat{
+	border: blue 5px solid;
+	 text-align: center;
+	 background-color: green;
+
+}
+#titleDiv{
+
+	margin: auto;
+    width: 50%;
+    border: 5px solid green;
+    padding: 10px;
+	font-family: 'Pacifico', cursive;
+	 text-align: center;
+
+}
