@@ -1,11 +1,10 @@
-<h1>Burgers!</h1>
+<h1>Eat Your Burgers</h1>
 
-<h2>Burgers that are not devoured!</h2>
+<h2>Burgers you have yet to devour include:</h2>
 
-<ul>
   {{#each burgers}}
     {{#unless this.devoured}}
-      <li>
+      
         {{this.burger_name}}
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
@@ -13,17 +12,17 @@
           <button type="submit" class="btn-success">NOM TIME!</button>
         </form>
 
-      </li>
+      
     {{/unless}}
   {{/each}}
-</ul>
+
 
 <h2>Burgers that have been devoured!</h2>
 
-<ul>
+
   {{#each burgers}}
     {{#if this.devoured}}
-      <li>
+      
         {{this.burger_name}}
 
         <form action="/{{this.id}}?_method=PUT" method="POST">
@@ -32,10 +31,10 @@
         </form>
 
 
-      </li>
+      
     {{/if}}
   {{/each}}
-</ul>
+
 
 <div id ="createUpdate">
 <h2>Add Your Next Burger</h2>
