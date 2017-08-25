@@ -1,11 +1,13 @@
-/*<!-- <style>
+/*
 @import url('https://fonts.googleapis.com/css?family=Lobster');
-</style> -->*/
+*/
 
 body{
 
 	background-color: yellow;
 	background-image: url('wallpaper.png');
+	font-family: 'Lobster';
+	font-size: 22px;
 }
 
 /*html {
