@@ -32,7 +32,7 @@ body{
 
 h1{
 
-	color: black;
+	color: white;
 	font-family: 'Lobster', cursive;
 	font-weight: bolder;
 	font-size: x-large;
@@ -86,5 +86,6 @@ p{
 	/*font-family: 'Pacifico', cursive;*/
 	font-family: 'Lobster', cursive;
 	text-align: center;
+	color: white;
 
 }
