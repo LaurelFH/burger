@@ -1,24 +1,27 @@
+/*<!-- <style>
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+</style> -->*/
+
 body{
 
 	background-color: yellow;
-	font-family: 'Pacifico', cursive;
-	  background-image: url('wallpaper.png');
+	background-image: url('wallpaper.png');
 }
 
-html {
-/*  background-image: url('wallpaper.png');*/
-}
+/*html {
+  background-image: url('wallpaper.png');
+}*/
 
 h1{
 
 	color: purple;
-	font-family: 'Pacifico', cursive;
+	font-family: 'Lobster', cursive;
 
 }
 
 p{
 
-	font-family: 'Pacifico', cursive;
+	font-family: 'Lobster', cursive;
 
 }
 
@@ -55,7 +58,8 @@ li{
     width: 50%;
     border: 5px solid green;
     padding: 10px;
-	font-family: 'Pacifico', cursive;
+	/*font-family: 'Pacifico', cursive;*/
+	font-family: 'Lobster', cursive;
 	 text-align: center;
 
 }
