@@ -16,8 +16,10 @@ body{
 
 h1{
 
-	color: purple;
+	color: black;
 	font-family: 'Lobster', cursive;
+	font-weight: bolder;
+	font-size: x-large;
 
 }
 
@@ -27,41 +29,46 @@ p{
 
 }
 
-li{
+/*li{
 	
 	border: black 5px solid;
 
-}
+}*/
 #createUpdate{
-	border: red 5px solid;
+	/*border: red 5px solid;*/
 	 text-align: center;
-
+	 background-color: #FFFF71;
+	padding: 10px;
 
 }
 
 #burgersEaten{
 
-	border: yellow 5px solid;
+	/*border: yellow 5px solid;*/
 	 text-align: center;
-	 background-color: red;
+	 background-color: #D46A6A;
 	/*opacity: .5;*/
+	padding: 10px;
+	padding-bottom: 25px;
 }
 
 
 #burgersToEat{
-	border: blue 5px solid;
+	/*border: blue 5px solid;*/
 	 text-align: center;
-	 background-color: green;
-
+	 background-color: #55AA55;
+	padding: 10px;
+	padding-bottom: 25px;
 }
+
 #titleDiv{
 
 	margin: auto;
     width: 50%;
-    border: 5px solid green;
+    /*border: 5px solid green;*/
     padding: 10px;
 	/*font-family: 'Pacifico', cursive;*/
 	font-family: 'Lobster', cursive;
-	 text-align: center;
+	text-align: center;
 
 }
